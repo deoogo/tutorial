@@ -5,6 +5,12 @@ git checkout -b NOMEDABRANCH --> Criar uma nova branch
 
 git checkout NOMEDABRANCH --> Acessar uma branch
 
+// delete branch locally
+git branch -d localBranchName
+
+// delete branch remotely
+git push origin --delete remoteBranchName
+
 git merge NOMEDABRANCH
 
 git log --> Mostra os commits
