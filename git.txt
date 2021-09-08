@@ -1,0 +1,21 @@
+# DICAS GIT
+
+
+git checkout -b NOMEDABRANCH --> Criar uma nova branch
+
+git checkout NOMEDABRANCH --> Acessar uma branch
+
+git merge NOMEDABRANCH
+
+git log --> Mostra os commits
+
+git log --oneline --> Mostra os commits simplificados
+
+git log --graph --all
+
+
+git reset HEAD --> Retira o arquivo adicionado do git add
+
+git reset --hard COMMITS --> Remove os commits 
+ 
+
