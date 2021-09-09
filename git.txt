@@ -1,27 +1,37 @@
 # DICAS GIT
 
-
+#BRANCHs
 git checkout -b NOMEDABRANCH --> Criar uma nova branch
-
 git checkout NOMEDABRANCH --> Acessar uma branch
-
-// delete branch locally
-git branch -d localBranchName
-
-// delete branch remotely
-git push origin --delete remoteBranchName
-
+git branch -d localBranchName --> Deleta a branch local
+git push origin --delete remoteBranchName --> Deleta a Branch remoto
 git merge NOMEDABRANCH
 
+#LOGs
 git log --> Mostra os commits
-
 git log --oneline --> Mostra os commits simplificados
-
 git log --graph --all
 
-
+# Remoção 
 git reset HEAD --> Retira o arquivo adicionado do git add
+git reset --hard COMMITS --> Remove os commits
 
-git reset --hard COMMITS --> Remove os commits 
+
+git fetch --> Equivale ao git pull, mas ele não faz o merge dos projetos
+
+#Exemplo em resolver conflito de repo: 
+git fetch
+git remote
+git checkout origin
+git checkout master
+git pull
+git add .
+git commit
+
+
+#configurar editor padrão
+git config --global core.editor (code|vim|etc)
+
+ 
  
 
