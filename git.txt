@@ -32,6 +32,8 @@ git commit
 #configurar editor padrão
 git config --global core.editor (code|vim|etc)
 
- 
+#Busca por perfil
+
+Explore = language:java location:Brazil,SP,São Paulo  
  
 
