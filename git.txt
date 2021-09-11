@@ -1,11 +1,13 @@
 # DICAS GIT
 
 #BRANCHs
-git checkout -b NOMEDABRANCH --> Criar uma nova branch
-git checkout NOMEDABRANCH --> Acessar uma branch
-git branch -d localBranchName --> Deleta a branch local
+git checkout -b <NOMEDABRANCH> --> Criar uma nova branch
+git checkout <NOMEDABRANCH> --> Acessar uma branch
+git branch -d <localBranchName> --> Deleta a branch local
 git push origin --delete remoteBranchName --> Deleta a Branch remoto
 git merge NOMEDABRANCH
+
+git push origin <Branch> --> move para branch e solicita o merge
 
 #LOGs
 git log --> Mostra os commits
@@ -14,7 +16,7 @@ git log --graph --all
 
 # Remoção 
 git reset HEAD --> Retira o arquivo adicionado do git add
-git reset --hard COMMITS --> Remove os commits
+git reset --hard <COMMITS> --> Remove os commits
 
 
 git fetch --> Equivale ao git pull, mas ele não faz o merge dos projetos
@@ -28,12 +30,32 @@ git pull
 git add .
 git commit
 
+# move arquivo de um determinado commit
+git cherry-pick <hash do commit>
+
 
 #configurar editor padrão
 git config --global core.editor (code|vim|etc)
 
+<<<<<<< HEAD
 #Busca por perfil
 
 Explore = language:java location:Brazil,SP,São Paulo  
  
+=======
+# GIT-FLOW
+
+# install git-flow
+https://github.com/nvie/gitflow/wiki/Installation
+
+Main/Master --> Repo principal
+Develop --> Desenvolvimento
+Feature --> Novas ideias
+Release --> Pré produção e correção de bug e depois pronto volta para Main/Master 
+HotFix --> Correção de problema
+
+git flow init --> Setar a branch q vai ser produção 
+
+
+>>>>>>> b83b9205b4b9569f2f0a811a3f34d9be42eed942
 
