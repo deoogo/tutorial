@@ -37,7 +37,6 @@ git cherry-pick <hash do commit>
 #configurar editor padrão
 git config --global core.editor (code|vim|etc)
 
-<<<<<<< HEAD
 #Busca por perfil
 
 Explore = language:java location:Brazil,SP,São Paulo  
@@ -56,6 +55,13 @@ HotFix --> Correção de problema
 
 git flow init --> Setar a branch q vai ser produção 
 
+git flow <feature|release|hotfix> start <nome/feature> Iniciar uma branch a parte para desenvolvimento
 
->>>>>>> b83b9205b4b9569f2f0a811a3f34d9be42eed942
+git flow <feature|release|hotfix> publish <nome/feature> --> Compartilhar a branch com outros colaboradores
+
+git flow <feature|release|hotfix> finish <nome/feature> Encerrar a branch e fazer o merge para dev ou prd
+
+git push origin <Branch> --> move para branch e solicita o merge
+
+git push origin --all --> Empurrar tudo para o repo.
 
