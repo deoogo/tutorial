@@ -67,7 +67,7 @@ Main/Master --> Repo principal \
 Develop --> Desenvolvimento \
 Feature --> Novas ideias \
 Release --> Pré produção e correção de bug e depois pronto volta para Main/Master \
-HotFix --> Correção de problema \
+HotFix --> Correção de problema 
 
 ```bash
 git flow init --> Setar a branch q vai ser produção 
